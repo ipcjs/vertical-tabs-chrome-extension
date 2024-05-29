@@ -18,13 +18,11 @@
       }
    },
    "description": "Vertical tab manager in side panel",
-   "differential_fingerprint": "1.a397bb75ec5608988ce93aa27a8ec1bbc9ba141fb08bc2394d2bf38a0d2e1410",
    "icons": {
       "128": "assets/icons/128.png",
       "16": "assets/icons/16.png",
       "48": "assets/icons/48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi0225KWp1jBxlJu1dgj4JSH2pmWh2P/spsc6PMgmu6+tQZvMnlfopKEnT3RVo66G/bFlNG48Md4Q82blMkdADQWH3f9j641/TN8uVzbFTDSaRvDlT7se4NQfj1/hLSueo2kPt/7CLbxT1LjWttraUPeoHjlqinkNjgt1g4o9JMSPn7FE+o2ljrIhnYFKd0yn5lq1Q5m8Jj4sa5qZLFD7U/QzcHqLJpSS9/Cd/o7q3mvmRaGNK/P94C/z2nUGY0zj9vJv1rZVNGVYzX+zVyPbBaWmujjTyigUjhI8e/473CvfIetYabQBQZGxJUDOdzADwGMiTbH5FW5ynJ5sss/r/wIDAQAB",
    "manifest_version": 3,
    "name": "Vertical Tabs",
    "permissions": [ "sidePanel", "tabs", "tabGroups", "storage", "favicon", "contextMenus" ],
