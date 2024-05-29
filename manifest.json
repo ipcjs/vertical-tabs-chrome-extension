@@ -1,40 +1,36 @@
 {
-  "author": "Sami Haddad",
-  "name": "Vertical Tabs",
-  "description": "Vertical tabs extension for Chrome",
-  "version": "1.0.3",
-  "background": {
-    "persistent": false,
-    "scripts": [
-      "app/chrome/background.js"
-    ]
-  },
-  "browser_action": {
-    "default_icon": {
-      "19": "assets/icons/19.png",
-      "38": "assets/icons/38.png"
-    },
-    "default_title": "Vertical Tabs"
-  },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "icons": {
-    "16": "assets/icons/16.png",
-    "48": "assets/icons/48.png",
-    "128": "assets/icons/128.png"
-  },
-  "manifest_version": 2,
-  "options_page": "app/chrome/options/options.html",
-  "options_ui": {
-    "chrome_style": false,
-    "page": "app/chrome/options/options.html"
-  },
-  "permissions": [
-    "storage"
-  ],
-  "update_url": "https://clients2.google.com/service/update2/crx",
-  "web_accessible_resources": [
-    "app/index.html",
-    "app/core/directives/tab/tab.html",
-    "assets/images/*"
-  ]
+   "action": {
+      "default_icon": {
+         "19": "assets/icons/19.png",
+         "38": "assets/icons/38.png"
+      },
+      "default_title": "Vertical Tabs"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "commands": {
+      "_execute_action": {
+         "suggested_key": {
+            "default": "Alt+B"
+         }
+      }
+   },
+   "description": "Vertical tab manager in side panel",
+   "differential_fingerprint": "1.a397bb75ec5608988ce93aa27a8ec1bbc9ba141fb08bc2394d2bf38a0d2e1410",
+   "icons": {
+      "128": "assets/icons/128.png",
+      "16": "assets/icons/16.png",
+      "48": "assets/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi0225KWp1jBxlJu1dgj4JSH2pmWh2P/spsc6PMgmu6+tQZvMnlfopKEnT3RVo66G/bFlNG48Md4Q82blMkdADQWH3f9j641/TN8uVzbFTDSaRvDlT7se4NQfj1/hLSueo2kPt/7CLbxT1LjWttraUPeoHjlqinkNjgt1g4o9JMSPn7FE+o2ljrIhnYFKd0yn5lq1Q5m8Jj4sa5qZLFD7U/QzcHqLJpSS9/Cd/o7q3mvmRaGNK/P94C/z2nUGY0zj9vJv1rZVNGVYzX+zVyPbBaWmujjTyigUjhI8e/473CvfIetYabQBQZGxJUDOdzADwGMiTbH5FW5ynJ5sss/r/wIDAQAB",
+   "manifest_version": 3,
+   "name": "Vertical Tabs",
+   "permissions": [ "sidePanel", "tabs", "tabGroups", "storage", "favicon", "contextMenus" ],
+   "side_panel": {
+      "default_path": "index.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.19"
 }
